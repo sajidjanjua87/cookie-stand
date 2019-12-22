@@ -1,13 +1,14 @@
+/* Header */
 header{
     background: darkorange;
     color: white;
     margin:0;
-    padding-top:10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font: 15/1.5;
+    font: 100% georgia;
     text-align: center;
     min-height: 72px;
-    border-bottom: rgb(46, 46, 46) 2px solid;
+    max-height: 92px;
+    border-bottom: rgb(255, 255, 255) 1px solid;
 }
 
 .container{
@@ -18,7 +19,7 @@ header{
 
 header li{
     display: inline;
-    float: left;
+    /* float: left; */
     margin: 0px;
     padding: 0 20px 0 20px;
 }
@@ -28,11 +29,34 @@ header a{
         text-decoration: none;
         text-transform: uppercase;
         font-size: 16px;
+        font-weight: 800;
 }
+
+/* Nav */
 header nav{
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
 
+}
+
+.logo{
+    background: url(../img/salmon.png) no-repeat center 30px;
+    background-size: contain;
+    background-color: rgb(180, 180, 180);
+    color: rgb(216, 216, 216);
+    font-size: 9px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    transform: rotate(-20deg);
+    border-color: rgb(255, 0, 0);
+    border: 1px solid;
+    box-shadow: inset 9px 20px 0px 1px #535353d3;
+    border-radius: 200px;
 }
 
 header #branding{
@@ -43,29 +67,89 @@ header #branding h1{
     margin: 0px;
 }
 
+/* Body */
 body{
     margin: 0px;
 }
-
 .showcase{
     min-height: 400px;
     background: url(../img/salmon.png) no-repeat fixed center;
     align-content: center;
-    box-shadow: inset 0 0 20px 1px black;
+    box-shadow: inset 0 0 20px 1px darkorange;
 }
 
 .showcase h2{
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(255, 140, 0, 0.301);
     width:inherit;
     font-size: 50px;
     color: whitesmoke;
     margin-block-start: inherit;
     text-align: center;
     position: inherit;
-    
-
 }
 
+main h2{
+    background-color: red;
+    color: white;
+    font: 200% san-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.stretch{
+    display: flex;
+}
+
+.cbox1{
+    min-height: 250px;
+    max-height: 250px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+    text-align: right;
+    font-size: 80px;
+    width: 49%;
+    float: left;
+    background: url(../img/Sugar\ Bliss\ cookies.jpg) no-repeat fixed left;
+    background-size: contain;
+    margin: 10px 5px 5px 0px;
+    padding: 120px 10px 100px 0px;
+    height:100%;
+    text-shadow: -6px 3px 8px black;
+}
+
+.cbox2{
+    min-height: 250px;
+    max-height: 250px;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: white;
+    text-align: left;
+    font-size: 80px;
+    width: 49%;
+    float: right;
+    background: url(../img/on\ order\ customized.jpg) no-repeat fixed right;
+    background-size: contain;
+    margin: 10px 0px 5px 5px;
+    padding: 120px 0px 100px 10px;
+    height:100%;
+    text-shadow: -6px 3px 8px black;
+}
+
+.cbox3{
+    min-height: 150px;
+    max-height:150px;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    height:100%;
+    width: 100%;
+    background: url(../img/Crispy\ Chocolate\ salmon\ cookiess.jpg) no-repeat fixed center;
+    background-size: contain;
+    margin: 5px 0px 10px 0px;
+    padding: 150px 0px 100px 0px;
+    text-shadow: -6px 3px 8px black;
+}
+
+/* Footer */
 footer{
     margin: 0px;
     background: darkorange;
@@ -75,4 +159,39 @@ footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: small;
     text-align: center;
+}
+
+/* sales page */
+.lists{
+    background-color: gainsboro;
+    margin: 50px 200px 50px 200px;
+    padding: 20px 100px 20px 100px;
+    }
+
+
+.heading{
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main ul{
+    background-color: #b3adad4d;
+    color: darkorange;
+    border-bottom: darkorange 2px solid;
+    padding: 40px 100px 40px 100px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+main li{
+    background-color: rgba(245, 245, 245, 0.479);
+    color: rgb(66, 66, 66);
+    text-align: left;
+    padding: 5px 50px 5px 50px;
+    font-size: small;
+    text-transform: none;
 }
